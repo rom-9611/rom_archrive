@@ -1,5 +1,11 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://rom-9611.github.io/rom_archrive/"
+languageCode = "en"
+title = "ROM Archive"
 theme = "PaperMod"
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[params]
+homeInfoParams = false
 
