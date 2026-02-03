@@ -4,10 +4,28 @@ title = "ROM Archive"
 theme = "PaperMod"
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+
 
 [params]
 homeInfoParams = false
+ShowReadingTime = true
+ShowPostNavLinks = true
+# Enable search
+enableSearch = true
 
 draft = true
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
 
