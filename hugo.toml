@@ -10,6 +10,8 @@ home = ["HTML", "RSS", "JSON"]
 tag = "tags"
 category = "categories"
 
+##disableKinds = []
+
 
 
 [params]
