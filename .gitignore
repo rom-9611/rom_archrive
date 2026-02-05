@@ -1,2 +1,14 @@
 public/
 .hugo_build.lock
+
+# Obsidian workspace files
+.obsidian/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Hugo build artifacts
+public/
+resources/
+
