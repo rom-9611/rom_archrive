@@ -20,8 +20,10 @@ ShowReadingTime = true
 ShowPostNavLinks = true
 # Enable search
 enableSearch = true
+ShowToc = true
+ShowCodeCopyButtons = true
 
-draft = true
+
 [params.fuseOpts]
 isCaseSensitive = false
 shouldSort = true
