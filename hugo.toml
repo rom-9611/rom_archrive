@@ -1,8 +1,6 @@
 baseURL = "https://rom-9611.github.io/rom_archrive/"
 languageCode = "en"
 title = "ROM Archive"
-layout: "search"
-url: "/search/"
 theme = "PaperMod"
 
 [outputs]
