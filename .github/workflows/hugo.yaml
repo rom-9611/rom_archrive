@@ -1,8 +1,10 @@
+---
 name: Build and deploy
 
-on:
+"on":
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -39,7 +41,8 @@ jobs:
 
       - name: Install Hugo
         run: |
-          curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz
+          curl -L -o hugo.tar.gz \
+            https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz
           tar -xzf hugo.tar.gz
           sudo mv hugo /usr/local/bin/hugo
 
@@ -70,4 +73,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
